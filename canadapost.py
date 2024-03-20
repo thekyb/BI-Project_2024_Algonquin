@@ -4,7 +4,7 @@
 # %%
 import pandas as pd
 # Load the Excel file into a DataFrame
-df = pd.read_excel(r'CPC-Algonquin College - Depot Dashboard - Data v2 - 2019-24.xlsx')
+df = pd.read_csv(r'./Data/CanadaPost_WorkLoad.csv')
 
 
 # %%
@@ -14,12 +14,12 @@ print(df.head())
 
 # %%
 # Get information about the DataFrame
-print(df.info())
+df.info()
 
 
 # %%
 # Summary statistics for numerical columns
-print(df.describe())
+df.describe()
 
 
 # %%
